@@ -1,0 +1,929 @@
+--[[
+
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+
+-- Instances
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local TextButton = Instance.new("TextButton")
+local Finished = Instance.new("Folder")
+local LagAll = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local TextButton_8 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
+local TextButton_10 = Instance.new("TextButton")
+local TextButton_11 = Instance.new("TextButton")
+local TextButton_12 = Instance.new("TextButton")
+local TextButton_13 = Instance.new("TextButton")
+local TextButton_14 = Instance.new("TextButton")
+local TextButton_15 = Instance.new("TextButton")
+local TextButton_16 = Instance.new("TextButton")
+local TextButton_17 = Instance.new("TextButton")
+local TextButton_18 = Instance.new("TextButton")
+local TextButton_19 = Instance.new("TextButton")
+local TextButton_20 = Instance.new("TextButton")
+local TextButton_21 = Instance.new("TextButton")
+local TextButton_22 = Instance.new("TextButton")
+local TextButton_23 = Instance.new("TextButton")
+local TextButton_24 = Instance.new("TextButton")
+local TextButton_25 = Instance.new("TextButton")
+local TextButton_26 = Instance.new("TextButton")
+local TextButton_27 = Instance.new("TextButton")
+local TextButton_28 = Instance.new("TextButton")
+local TextButton_29 = Instance.new("TextButton")
+local TextButton_30 = Instance.new("TextButton")
+local TextButton_31 = Instance.new("TextButton")
+local TextButton_32 = Instance.new("TextButton")
+local TextButton_33 = Instance.new("TextButton")
+local TextButton_34 = Instance.new("TextButton")
+local TextButton_35 = Instance.new("TextButton")
+local TextButton_36 = Instance.new("TextButton")
+local TextButton_37 = Instance.new("TextButton")
+local TextButton_38 = Instance.new("TextButton")
+local TextButton_39 = Instance.new("TextButton")
+local TextButton_40 = Instance.new("TextButton")
+local TextButton_41 = Instance.new("TextButton")
+local TextButton_42 = Instance.new("TextButton")
+local TextButton_43 = Instance.new("TextButton")
+local TextButton_44 = Instance.new("TextButton")
+local TextButton_45 = Instance.new("TextButton")
+local TextButton_46 = Instance.new("TextButton")
+local TextButton_47 = Instance.new("TextButton")
+local TextButton_48 = Instance.new("TextButton")
+local TextButton_49 = Instance.new("TextButton")
+local TextButton_50 = Instance.new("TextButton")
+local TextButton_51 = Instance.new("TextButton")
+local TextButton_52 = Instance.new("TextButton")
+local TextButton_53 = Instance.new("TextButton")
+local TextButton_54 = Instance.new("TextButton")
+local TextButton_55 = Instance.new("TextButton")
+local TextButton_56 = Instance.new("TextButton")
+local TextButton_57 = Instance.new("TextButton")
+local TextButton_58 = Instance.new("TextButton")
+local TextButton_59 = Instance.new("TextButton")
+local TextButton_60 = Instance.new("TextButton")
+local TextButton_61 = Instance.new("TextButton")
+local TextButton_62 = Instance.new("TextButton")
+local TextButton_63 = Instance.new("TextButton")
+local TextButton_64 = Instance.new("TextButton")
+local TextButton_65 = Instance.new("TextButton")
+local TextButton_66 = Instance.new("TextButton")
+local TextButton_67 = Instance.new("TextButton")
+local TextButton_68 = Instance.new("TextButton")
+local TextButton_69 = Instance.new("TextButton")
+local TextButton_70 = Instance.new("TextButton")
+local TextButton_71 = Instance.new("TextButton")
+local TextButton_72 = Instance.new("TextButton")
+local TextButton_73 = Instance.new("TextButton")
+local TextButton_74 = Instance.new("TextButton")
+local TextButton_75 = Instance.new("TextButton")
+
+-- Properties
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame.BorderColor3 = Color3.new(1, 0, 0)
+Frame.BorderSizePixel = 2
+Frame.Position = UDim2.new(0, 0, 0.133165836, 0)
+Frame.Size = UDim2.new(0, 403, 0, 506)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderColor3 = Color3.new(1, 0, 0)
+TextLabel.BorderSizePixel = 2
+TextLabel.Size = UDim2.new(0, 403, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "C00lGui By telset31"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_2.BackgroundTransparency = 1
+Frame_2.BorderColor3 = Color3.new(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.00744416891, 0, 0.111976288, 0)
+Frame_2.Size = UDim2.new(0, 397, 0, 449)
+
+UIGridLayout.Parent = Frame_2
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellSize = UDim2.new(0, 75, 0, 25)
+
+TextButton.Parent = Frame_2
+TextButton.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton.BorderColor3 = Color3.new(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "PlaceHolder"
+TextButton.TextColor3 = Color3.new(1, 1, 1)
+TextButton.TextSize = 14
+
+Finished.Name = "Finished"
+Finished.Parent = Frame_2
+
+LagAll.Name = "LagAll"
+LagAll.Parent = Frame_2
+LagAll.BackgroundColor3 = Color3.new(0, 0, 0)
+LagAll.BorderColor3 = Color3.new(0, 0, 0)
+LagAll.BorderSizePixel = 0
+LagAll.Size = UDim2.new(0, 200, 0, 50)
+LagAll.Font = Enum.Font.SourceSans
+LagAll.Text = "Lag All"
+LagAll.TextColor3 = Color3.new(1, 1, 1)
+LagAll.TextSize = 14
+
+TextButton_2.Parent = Frame_2
+TextButton_2.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_2.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Size = UDim2.new(0, 200, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "PlaceHolder"
+TextButton_2.TextColor3 = Color3.new(1, 1, 1)
+TextButton_2.TextSize = 14
+
+TextButton_3.Parent = Frame_2
+TextButton_3.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_3.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Size = UDim2.new(0, 200, 0, 50)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "PlaceHolder"
+TextButton_3.TextColor3 = Color3.new(1, 1, 1)
+TextButton_3.TextSize = 14
+
+TextButton_4.Parent = Frame_2
+TextButton_4.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_4.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Size = UDim2.new(0, 200, 0, 50)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "PlaceHolder"
+TextButton_4.TextColor3 = Color3.new(1, 1, 1)
+TextButton_4.TextSize = 14
+
+TextButton_5.Parent = Frame_2
+TextButton_5.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_5.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Size = UDim2.new(0, 200, 0, 50)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "PlaceHolder"
+TextButton_5.TextColor3 = Color3.new(1, 1, 1)
+TextButton_5.TextSize = 14
+
+TextButton_6.Parent = Frame_2
+TextButton_6.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_6.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_6.BorderSizePixel = 0
+TextButton_6.Size = UDim2.new(0, 200, 0, 50)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "PlaceHolder"
+TextButton_6.TextColor3 = Color3.new(1, 1, 1)
+TextButton_6.TextSize = 14
+
+TextButton_7.Parent = Frame_2
+TextButton_7.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_7.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_7.BorderSizePixel = 0
+TextButton_7.Size = UDim2.new(0, 200, 0, 50)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = "PlaceHolder"
+TextButton_7.TextColor3 = Color3.new(1, 1, 1)
+TextButton_7.TextSize = 14
+
+TextButton_8.Parent = Frame_2
+TextButton_8.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_8.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_8.BorderSizePixel = 0
+TextButton_8.Size = UDim2.new(0, 200, 0, 50)
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.Text = "PlaceHolder"
+TextButton_8.TextColor3 = Color3.new(1, 1, 1)
+TextButton_8.TextSize = 14
+
+TextButton_9.Parent = Frame_2
+TextButton_9.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_9.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_9.BorderSizePixel = 0
+TextButton_9.Size = UDim2.new(0, 200, 0, 50)
+TextButton_9.Font = Enum.Font.SourceSans
+TextButton_9.Text = "PlaceHolder"
+TextButton_9.TextColor3 = Color3.new(1, 1, 1)
+TextButton_9.TextSize = 14
+
+TextButton_10.Parent = Frame_2
+TextButton_10.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_10.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_10.BorderSizePixel = 0
+TextButton_10.Size = UDim2.new(0, 200, 0, 50)
+TextButton_10.Font = Enum.Font.SourceSans
+TextButton_10.Text = "PlaceHolder"
+TextButton_10.TextColor3 = Color3.new(1, 1, 1)
+TextButton_10.TextSize = 14
+
+TextButton_11.Parent = Frame_2
+TextButton_11.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_11.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_11.BorderSizePixel = 0
+TextButton_11.Size = UDim2.new(0, 200, 0, 50)
+TextButton_11.Font = Enum.Font.SourceSans
+TextButton_11.Text = "PlaceHolder"
+TextButton_11.TextColor3 = Color3.new(1, 1, 1)
+TextButton_11.TextSize = 14
+
+TextButton_12.Parent = Frame_2
+TextButton_12.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_12.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_12.BorderSizePixel = 0
+TextButton_12.Size = UDim2.new(0, 200, 0, 50)
+TextButton_12.Font = Enum.Font.SourceSans
+TextButton_12.Text = "PlaceHolder"
+TextButton_12.TextColor3 = Color3.new(1, 1, 1)
+TextButton_12.TextSize = 14
+
+TextButton_13.Parent = Frame_2
+TextButton_13.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_13.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_13.BorderSizePixel = 0
+TextButton_13.Size = UDim2.new(0, 200, 0, 50)
+TextButton_13.Font = Enum.Font.SourceSans
+TextButton_13.Text = "PlaceHolder"
+TextButton_13.TextColor3 = Color3.new(1, 1, 1)
+TextButton_13.TextSize = 14
+
+TextButton_14.Parent = Frame_2
+TextButton_14.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_14.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_14.BorderSizePixel = 0
+TextButton_14.Size = UDim2.new(0, 200, 0, 50)
+TextButton_14.Font = Enum.Font.SourceSans
+TextButton_14.Text = "PlaceHolder"
+TextButton_14.TextColor3 = Color3.new(1, 1, 1)
+TextButton_14.TextSize = 14
+
+TextButton_15.Parent = Frame_2
+TextButton_15.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_15.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_15.BorderSizePixel = 0
+TextButton_15.Size = UDim2.new(0, 200, 0, 50)
+TextButton_15.Font = Enum.Font.SourceSans
+TextButton_15.Text = "PlaceHolder"
+TextButton_15.TextColor3 = Color3.new(1, 1, 1)
+TextButton_15.TextSize = 14
+
+TextButton_16.Parent = Frame_2
+TextButton_16.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_16.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_16.BorderSizePixel = 0
+TextButton_16.Size = UDim2.new(0, 200, 0, 50)
+TextButton_16.Font = Enum.Font.SourceSans
+TextButton_16.Text = "PlaceHolder"
+TextButton_16.TextColor3 = Color3.new(1, 1, 1)
+TextButton_16.TextSize = 14
+
+TextButton_17.Parent = Frame_2
+TextButton_17.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_17.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_17.BorderSizePixel = 0
+TextButton_17.Size = UDim2.new(0, 200, 0, 50)
+TextButton_17.Font = Enum.Font.SourceSans
+TextButton_17.Text = "PlaceHolder"
+TextButton_17.TextColor3 = Color3.new(1, 1, 1)
+TextButton_17.TextSize = 14
+
+TextButton_18.Parent = Frame_2
+TextButton_18.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_18.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_18.BorderSizePixel = 0
+TextButton_18.Size = UDim2.new(0, 200, 0, 50)
+TextButton_18.Font = Enum.Font.SourceSans
+TextButton_18.Text = "PlaceHolder"
+TextButton_18.TextColor3 = Color3.new(1, 1, 1)
+TextButton_18.TextSize = 14
+
+TextButton_19.Parent = Frame_2
+TextButton_19.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_19.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_19.BorderSizePixel = 0
+TextButton_19.Size = UDim2.new(0, 200, 0, 50)
+TextButton_19.Font = Enum.Font.SourceSans
+TextButton_19.Text = "PlaceHolder"
+TextButton_19.TextColor3 = Color3.new(1, 1, 1)
+TextButton_19.TextSize = 14
+
+TextButton_20.Parent = Frame_2
+TextButton_20.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_20.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_20.BorderSizePixel = 0
+TextButton_20.Size = UDim2.new(0, 200, 0, 50)
+TextButton_20.Font = Enum.Font.SourceSans
+TextButton_20.Text = "PlaceHolder"
+TextButton_20.TextColor3 = Color3.new(1, 1, 1)
+TextButton_20.TextSize = 14
+
+TextButton_21.Parent = Frame_2
+TextButton_21.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_21.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_21.BorderSizePixel = 0
+TextButton_21.Size = UDim2.new(0, 200, 0, 50)
+TextButton_21.Font = Enum.Font.SourceSans
+TextButton_21.Text = "PlaceHolder"
+TextButton_21.TextColor3 = Color3.new(1, 1, 1)
+TextButton_21.TextSize = 14
+
+TextButton_22.Parent = Frame_2
+TextButton_22.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_22.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_22.BorderSizePixel = 0
+TextButton_22.Size = UDim2.new(0, 200, 0, 50)
+TextButton_22.Font = Enum.Font.SourceSans
+TextButton_22.Text = "PlaceHolder"
+TextButton_22.TextColor3 = Color3.new(1, 1, 1)
+TextButton_22.TextSize = 14
+
+TextButton_23.Parent = Frame_2
+TextButton_23.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_23.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_23.BorderSizePixel = 0
+TextButton_23.Size = UDim2.new(0, 200, 0, 50)
+TextButton_23.Font = Enum.Font.SourceSans
+TextButton_23.Text = "PlaceHolder"
+TextButton_23.TextColor3 = Color3.new(1, 1, 1)
+TextButton_23.TextSize = 14
+
+TextButton_24.Parent = Frame_2
+TextButton_24.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_24.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_24.BorderSizePixel = 0
+TextButton_24.Size = UDim2.new(0, 200, 0, 50)
+TextButton_24.Font = Enum.Font.SourceSans
+TextButton_24.Text = "PlaceHolder"
+TextButton_24.TextColor3 = Color3.new(1, 1, 1)
+TextButton_24.TextSize = 14
+
+TextButton_25.Parent = Frame_2
+TextButton_25.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_25.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_25.BorderSizePixel = 0
+TextButton_25.Size = UDim2.new(0, 200, 0, 50)
+TextButton_25.Font = Enum.Font.SourceSans
+TextButton_25.Text = "PlaceHolder"
+TextButton_25.TextColor3 = Color3.new(1, 1, 1)
+TextButton_25.TextSize = 14
+
+TextButton_26.Parent = Frame_2
+TextButton_26.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_26.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_26.BorderSizePixel = 0
+TextButton_26.Size = UDim2.new(0, 200, 0, 50)
+TextButton_26.Font = Enum.Font.SourceSans
+TextButton_26.Text = "PlaceHolder"
+TextButton_26.TextColor3 = Color3.new(1, 1, 1)
+TextButton_26.TextSize = 14
+
+TextButton_27.Parent = Frame_2
+TextButton_27.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_27.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_27.BorderSizePixel = 0
+TextButton_27.Size = UDim2.new(0, 200, 0, 50)
+TextButton_27.Font = Enum.Font.SourceSans
+TextButton_27.Text = "PlaceHolder"
+TextButton_27.TextColor3 = Color3.new(1, 1, 1)
+TextButton_27.TextSize = 14
+
+TextButton_28.Parent = Frame_2
+TextButton_28.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_28.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_28.BorderSizePixel = 0
+TextButton_28.Size = UDim2.new(0, 200, 0, 50)
+TextButton_28.Font = Enum.Font.SourceSans
+TextButton_28.Text = "PlaceHolder"
+TextButton_28.TextColor3 = Color3.new(1, 1, 1)
+TextButton_28.TextSize = 14
+
+TextButton_29.Parent = Frame_2
+TextButton_29.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_29.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_29.BorderSizePixel = 0
+TextButton_29.Size = UDim2.new(0, 200, 0, 50)
+TextButton_29.Font = Enum.Font.SourceSans
+TextButton_29.Text = "PlaceHolder"
+TextButton_29.TextColor3 = Color3.new(1, 1, 1)
+TextButton_29.TextSize = 14
+
+TextButton_30.Parent = Frame_2
+TextButton_30.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_30.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_30.BorderSizePixel = 0
+TextButton_30.Size = UDim2.new(0, 200, 0, 50)
+TextButton_30.Font = Enum.Font.SourceSans
+TextButton_30.Text = "PlaceHolder"
+TextButton_30.TextColor3 = Color3.new(1, 1, 1)
+TextButton_30.TextSize = 14
+
+TextButton_31.Parent = Frame_2
+TextButton_31.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_31.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_31.BorderSizePixel = 0
+TextButton_31.Size = UDim2.new(0, 200, 0, 50)
+TextButton_31.Font = Enum.Font.SourceSans
+TextButton_31.Text = "PlaceHolder"
+TextButton_31.TextColor3 = Color3.new(1, 1, 1)
+TextButton_31.TextSize = 14
+
+TextButton_32.Parent = Frame_2
+TextButton_32.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_32.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_32.BorderSizePixel = 0
+TextButton_32.Size = UDim2.new(0, 200, 0, 50)
+TextButton_32.Font = Enum.Font.SourceSans
+TextButton_32.Text = "PlaceHolder"
+TextButton_32.TextColor3 = Color3.new(1, 1, 1)
+TextButton_32.TextSize = 14
+
+TextButton_33.Parent = Frame_2
+TextButton_33.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_33.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_33.BorderSizePixel = 0
+TextButton_33.Size = UDim2.new(0, 200, 0, 50)
+TextButton_33.Font = Enum.Font.SourceSans
+TextButton_33.Text = "PlaceHolder"
+TextButton_33.TextColor3 = Color3.new(1, 1, 1)
+TextButton_33.TextSize = 14
+
+TextButton_34.Parent = Frame_2
+TextButton_34.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_34.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_34.BorderSizePixel = 0
+TextButton_34.Size = UDim2.new(0, 200, 0, 50)
+TextButton_34.Font = Enum.Font.SourceSans
+TextButton_34.Text = "PlaceHolder"
+TextButton_34.TextColor3 = Color3.new(1, 1, 1)
+TextButton_34.TextSize = 14
+
+TextButton_35.Parent = Frame_2
+TextButton_35.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_35.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_35.BorderSizePixel = 0
+TextButton_35.Size = UDim2.new(0, 200, 0, 50)
+TextButton_35.Font = Enum.Font.SourceSans
+TextButton_35.Text = "PlaceHolder"
+TextButton_35.TextColor3 = Color3.new(1, 1, 1)
+TextButton_35.TextSize = 14
+
+TextButton_36.Parent = Frame_2
+TextButton_36.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_36.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_36.BorderSizePixel = 0
+TextButton_36.Size = UDim2.new(0, 200, 0, 50)
+TextButton_36.Font = Enum.Font.SourceSans
+TextButton_36.Text = "PlaceHolder"
+TextButton_36.TextColor3 = Color3.new(1, 1, 1)
+TextButton_36.TextSize = 14
+
+TextButton_37.Parent = Frame_2
+TextButton_37.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_37.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_37.BorderSizePixel = 0
+TextButton_37.Size = UDim2.new(0, 200, 0, 50)
+TextButton_37.Font = Enum.Font.SourceSans
+TextButton_37.Text = "PlaceHolder"
+TextButton_37.TextColor3 = Color3.new(1, 1, 1)
+TextButton_37.TextSize = 14
+
+TextButton_38.Parent = Frame_2
+TextButton_38.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_38.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_38.BorderSizePixel = 0
+TextButton_38.Size = UDim2.new(0, 200, 0, 50)
+TextButton_38.Font = Enum.Font.SourceSans
+TextButton_38.Text = "PlaceHolder"
+TextButton_38.TextColor3 = Color3.new(1, 1, 1)
+TextButton_38.TextSize = 14
+
+TextButton_39.Parent = Frame_2
+TextButton_39.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_39.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_39.BorderSizePixel = 0
+TextButton_39.Size = UDim2.new(0, 200, 0, 50)
+TextButton_39.Font = Enum.Font.SourceSans
+TextButton_39.Text = "PlaceHolder"
+TextButton_39.TextColor3 = Color3.new(1, 1, 1)
+TextButton_39.TextSize = 14
+
+TextButton_40.Parent = Frame_2
+TextButton_40.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_40.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_40.BorderSizePixel = 0
+TextButton_40.Size = UDim2.new(0, 200, 0, 50)
+TextButton_40.Font = Enum.Font.SourceSans
+TextButton_40.Text = "PlaceHolder"
+TextButton_40.TextColor3 = Color3.new(1, 1, 1)
+TextButton_40.TextSize = 14
+
+TextButton_41.Parent = Frame_2
+TextButton_41.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_41.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_41.BorderSizePixel = 0
+TextButton_41.Size = UDim2.new(0, 200, 0, 50)
+TextButton_41.Font = Enum.Font.SourceSans
+TextButton_41.Text = "PlaceHolder"
+TextButton_41.TextColor3 = Color3.new(1, 1, 1)
+TextButton_41.TextSize = 14
+
+TextButton_42.Parent = Frame_2
+TextButton_42.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_42.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_42.BorderSizePixel = 0
+TextButton_42.Size = UDim2.new(0, 200, 0, 50)
+TextButton_42.Font = Enum.Font.SourceSans
+TextButton_42.Text = "PlaceHolder"
+TextButton_42.TextColor3 = Color3.new(1, 1, 1)
+TextButton_42.TextSize = 14
+
+TextButton_43.Parent = Frame_2
+TextButton_43.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_43.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_43.BorderSizePixel = 0
+TextButton_43.Size = UDim2.new(0, 200, 0, 50)
+TextButton_43.Font = Enum.Font.SourceSans
+TextButton_43.Text = "PlaceHolder"
+TextButton_43.TextColor3 = Color3.new(1, 1, 1)
+TextButton_43.TextSize = 14
+
+TextButton_44.Parent = Frame_2
+TextButton_44.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_44.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_44.BorderSizePixel = 0
+TextButton_44.Size = UDim2.new(0, 200, 0, 50)
+TextButton_44.Font = Enum.Font.SourceSans
+TextButton_44.Text = "PlaceHolder"
+TextButton_44.TextColor3 = Color3.new(1, 1, 1)
+TextButton_44.TextSize = 14
+
+TextButton_45.Parent = Frame_2
+TextButton_45.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_45.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_45.BorderSizePixel = 0
+TextButton_45.Size = UDim2.new(0, 200, 0, 50)
+TextButton_45.Font = Enum.Font.SourceSans
+TextButton_45.Text = "PlaceHolder"
+TextButton_45.TextColor3 = Color3.new(1, 1, 1)
+TextButton_45.TextSize = 14
+
+TextButton_46.Parent = Frame_2
+TextButton_46.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_46.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_46.BorderSizePixel = 0
+TextButton_46.Size = UDim2.new(0, 200, 0, 50)
+TextButton_46.Font = Enum.Font.SourceSans
+TextButton_46.Text = "PlaceHolder"
+TextButton_46.TextColor3 = Color3.new(1, 1, 1)
+TextButton_46.TextSize = 14
+
+TextButton_47.Parent = Frame_2
+TextButton_47.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_47.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_47.BorderSizePixel = 0
+TextButton_47.Size = UDim2.new(0, 200, 0, 50)
+TextButton_47.Font = Enum.Font.SourceSans
+TextButton_47.Text = "PlaceHolder"
+TextButton_47.TextColor3 = Color3.new(1, 1, 1)
+TextButton_47.TextSize = 14
+
+TextButton_48.Parent = Frame_2
+TextButton_48.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_48.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_48.BorderSizePixel = 0
+TextButton_48.Size = UDim2.new(0, 200, 0, 50)
+TextButton_48.Font = Enum.Font.SourceSans
+TextButton_48.Text = "PlaceHolder"
+TextButton_48.TextColor3 = Color3.new(1, 1, 1)
+TextButton_48.TextSize = 14
+
+TextButton_49.Parent = Frame_2
+TextButton_49.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_49.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_49.BorderSizePixel = 0
+TextButton_49.Size = UDim2.new(0, 200, 0, 50)
+TextButton_49.Font = Enum.Font.SourceSans
+TextButton_49.Text = "PlaceHolder"
+TextButton_49.TextColor3 = Color3.new(1, 1, 1)
+TextButton_49.TextSize = 14
+
+TextButton_50.Parent = Frame_2
+TextButton_50.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_50.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_50.BorderSizePixel = 0
+TextButton_50.Size = UDim2.new(0, 200, 0, 50)
+TextButton_50.Font = Enum.Font.SourceSans
+TextButton_50.Text = "PlaceHolder"
+TextButton_50.TextColor3 = Color3.new(1, 1, 1)
+TextButton_50.TextSize = 14
+
+TextButton_51.Parent = Frame_2
+TextButton_51.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_51.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_51.BorderSizePixel = 0
+TextButton_51.Size = UDim2.new(0, 200, 0, 50)
+TextButton_51.Font = Enum.Font.SourceSans
+TextButton_51.Text = "PlaceHolder"
+TextButton_51.TextColor3 = Color3.new(1, 1, 1)
+TextButton_51.TextSize = 14
+
+TextButton_52.Parent = Frame_2
+TextButton_52.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_52.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_52.BorderSizePixel = 0
+TextButton_52.Size = UDim2.new(0, 200, 0, 50)
+TextButton_52.Font = Enum.Font.SourceSans
+TextButton_52.Text = "PlaceHolder"
+TextButton_52.TextColor3 = Color3.new(1, 1, 1)
+TextButton_52.TextSize = 14
+
+TextButton_53.Parent = Frame_2
+TextButton_53.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_53.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_53.BorderSizePixel = 0
+TextButton_53.Size = UDim2.new(0, 200, 0, 50)
+TextButton_53.Font = Enum.Font.SourceSans
+TextButton_53.Text = "PlaceHolder"
+TextButton_53.TextColor3 = Color3.new(1, 1, 1)
+TextButton_53.TextSize = 14
+
+TextButton_54.Parent = Frame_2
+TextButton_54.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_54.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_54.BorderSizePixel = 0
+TextButton_54.Size = UDim2.new(0, 200, 0, 50)
+TextButton_54.Font = Enum.Font.SourceSans
+TextButton_54.Text = "PlaceHolder"
+TextButton_54.TextColor3 = Color3.new(1, 1, 1)
+TextButton_54.TextSize = 14
+
+TextButton_55.Parent = Frame_2
+TextButton_55.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_55.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_55.BorderSizePixel = 0
+TextButton_55.Size = UDim2.new(0, 200, 0, 50)
+TextButton_55.Font = Enum.Font.SourceSans
+TextButton_55.Text = "PlaceHolder"
+TextButton_55.TextColor3 = Color3.new(1, 1, 1)
+TextButton_55.TextSize = 14
+
+TextButton_56.Parent = Frame_2
+TextButton_56.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_56.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_56.BorderSizePixel = 0
+TextButton_56.Size = UDim2.new(0, 200, 0, 50)
+TextButton_56.Font = Enum.Font.SourceSans
+TextButton_56.Text = "PlaceHolder"
+TextButton_56.TextColor3 = Color3.new(1, 1, 1)
+TextButton_56.TextSize = 14
+
+TextButton_57.Parent = Frame_2
+TextButton_57.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_57.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_57.BorderSizePixel = 0
+TextButton_57.Size = UDim2.new(0, 200, 0, 50)
+TextButton_57.Font = Enum.Font.SourceSans
+TextButton_57.Text = "PlaceHolder"
+TextButton_57.TextColor3 = Color3.new(1, 1, 1)
+TextButton_57.TextSize = 14
+
+TextButton_58.Parent = Frame_2
+TextButton_58.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_58.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_58.BorderSizePixel = 0
+TextButton_58.Size = UDim2.new(0, 200, 0, 50)
+TextButton_58.Font = Enum.Font.SourceSans
+TextButton_58.Text = "PlaceHolder"
+TextButton_58.TextColor3 = Color3.new(1, 1, 1)
+TextButton_58.TextSize = 14
+
+TextButton_59.Parent = Frame_2
+TextButton_59.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_59.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_59.BorderSizePixel = 0
+TextButton_59.Size = UDim2.new(0, 200, 0, 50)
+TextButton_59.Font = Enum.Font.SourceSans
+TextButton_59.Text = "PlaceHolder"
+TextButton_59.TextColor3 = Color3.new(1, 1, 1)
+TextButton_59.TextSize = 14
+
+TextButton_60.Parent = Frame_2
+TextButton_60.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_60.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_60.BorderSizePixel = 0
+TextButton_60.Size = UDim2.new(0, 200, 0, 50)
+TextButton_60.Font = Enum.Font.SourceSans
+TextButton_60.Text = "PlaceHolder"
+TextButton_60.TextColor3 = Color3.new(1, 1, 1)
+TextButton_60.TextSize = 14
+
+TextButton_61.Parent = Frame_2
+TextButton_61.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_61.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_61.BorderSizePixel = 0
+TextButton_61.Size = UDim2.new(0, 200, 0, 50)
+TextButton_61.Font = Enum.Font.SourceSans
+TextButton_61.Text = "PlaceHolder"
+TextButton_61.TextColor3 = Color3.new(1, 1, 1)
+TextButton_61.TextSize = 14
+
+TextButton_62.Parent = Frame_2
+TextButton_62.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_62.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_62.BorderSizePixel = 0
+TextButton_62.Size = UDim2.new(0, 200, 0, 50)
+TextButton_62.Font = Enum.Font.SourceSans
+TextButton_62.Text = "PlaceHolder"
+TextButton_62.TextColor3 = Color3.new(1, 1, 1)
+TextButton_62.TextSize = 14
+
+TextButton_63.Parent = Frame_2
+TextButton_63.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_63.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_63.BorderSizePixel = 0
+TextButton_63.Size = UDim2.new(0, 200, 0, 50)
+TextButton_63.Font = Enum.Font.SourceSans
+TextButton_63.Text = "PlaceHolder"
+TextButton_63.TextColor3 = Color3.new(1, 1, 1)
+TextButton_63.TextSize = 14
+
+TextButton_64.Parent = Frame_2
+TextButton_64.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_64.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_64.BorderSizePixel = 0
+TextButton_64.Size = UDim2.new(0, 200, 0, 50)
+TextButton_64.Font = Enum.Font.SourceSans
+TextButton_64.Text = "PlaceHolder"
+TextButton_64.TextColor3 = Color3.new(1, 1, 1)
+TextButton_64.TextSize = 14
+
+TextButton_65.Parent = Frame_2
+TextButton_65.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_65.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_65.BorderSizePixel = 0
+TextButton_65.Size = UDim2.new(0, 200, 0, 50)
+TextButton_65.Font = Enum.Font.SourceSans
+TextButton_65.Text = "PlaceHolder"
+TextButton_65.TextColor3 = Color3.new(1, 1, 1)
+TextButton_65.TextSize = 14
+
+TextButton_66.Parent = Frame_2
+TextButton_66.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_66.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_66.BorderSizePixel = 0
+TextButton_66.Size = UDim2.new(0, 200, 0, 50)
+TextButton_66.Font = Enum.Font.SourceSans
+TextButton_66.Text = "PlaceHolder"
+TextButton_66.TextColor3 = Color3.new(1, 1, 1)
+TextButton_66.TextSize = 14
+
+TextButton_67.Parent = Frame_2
+TextButton_67.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_67.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_67.BorderSizePixel = 0
+TextButton_67.Size = UDim2.new(0, 200, 0, 50)
+TextButton_67.Font = Enum.Font.SourceSans
+TextButton_67.Text = "PlaceHolder"
+TextButton_67.TextColor3 = Color3.new(1, 1, 1)
+TextButton_67.TextSize = 14
+
+TextButton_68.Parent = Frame_2
+TextButton_68.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_68.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_68.BorderSizePixel = 0
+TextButton_68.Size = UDim2.new(0, 200, 0, 50)
+TextButton_68.Font = Enum.Font.SourceSans
+TextButton_68.Text = "PlaceHolder"
+TextButton_68.TextColor3 = Color3.new(1, 1, 1)
+TextButton_68.TextSize = 14
+
+TextButton_69.Parent = Frame_2
+TextButton_69.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_69.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_69.BorderSizePixel = 0
+TextButton_69.Size = UDim2.new(0, 200, 0, 50)
+TextButton_69.Font = Enum.Font.SourceSans
+TextButton_69.Text = "PlaceHolder"
+TextButton_69.TextColor3 = Color3.new(1, 1, 1)
+TextButton_69.TextSize = 14
+
+TextButton_70.Parent = Frame_2
+TextButton_70.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_70.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_70.BorderSizePixel = 0
+TextButton_70.Size = UDim2.new(0, 200, 0, 50)
+TextButton_70.Font = Enum.Font.SourceSans
+TextButton_70.Text = "PlaceHolder"
+TextButton_70.TextColor3 = Color3.new(1, 1, 1)
+TextButton_70.TextSize = 14
+
+TextButton_71.Parent = Frame_2
+TextButton_71.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_71.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_71.BorderSizePixel = 0
+TextButton_71.Size = UDim2.new(0, 200, 0, 50)
+TextButton_71.Font = Enum.Font.SourceSans
+TextButton_71.Text = "PlaceHolder"
+TextButton_71.TextColor3 = Color3.new(1, 1, 1)
+TextButton_71.TextSize = 14
+
+TextButton_72.Parent = Frame_2
+TextButton_72.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_72.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_72.BorderSizePixel = 0
+TextButton_72.Size = UDim2.new(0, 200, 0, 50)
+TextButton_72.Font = Enum.Font.SourceSans
+TextButton_72.Text = "PlaceHolder"
+TextButton_72.TextColor3 = Color3.new(1, 1, 1)
+TextButton_72.TextSize = 14
+
+TextButton_73.Parent = Frame_2
+TextButton_73.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_73.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_73.BorderSizePixel = 0
+TextButton_73.Size = UDim2.new(0, 200, 0, 50)
+TextButton_73.Font = Enum.Font.SourceSans
+TextButton_73.Text = "PlaceHolder"
+TextButton_73.TextColor3 = Color3.new(1, 1, 1)
+TextButton_73.TextSize = 14
+
+TextButton_74.Parent = Frame_2
+TextButton_74.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_74.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_74.BorderSizePixel = 0
+TextButton_74.Size = UDim2.new(0, 200, 0, 50)
+TextButton_74.Font = Enum.Font.SourceSans
+TextButton_74.Text = "PlaceHolder"
+TextButton_74.TextColor3 = Color3.new(1, 1, 1)
+TextButton_74.TextSize = 14
+
+TextButton_75.Parent = ScreenGui
+TextButton_75.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_75.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_75.BorderSizePixel = 2
+TextButton_75.Position = UDim2.new(0, 0, 0.768844247, 0)
+TextButton_75.Size = UDim2.new(0, 168, 0, 26)
+TextButton_75.Font = Enum.Font.SourceSans
+TextButton_75.Text = "Press Me To Load"
+TextButton_75.TextColor3 = Color3.new(1, 1, 1)
+TextButton_75.TextScaled = true
+TextButton_75.TextSize = 14
+TextButton_75.TextWrapped = true
+
+-- Scripts
+
+local function QDMPYG_fake_script() -- TextButton_75.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_75)
+
+	local button = script.Parent
+	local frame = button.Parent:FindFirstChild("Frame")
+	
+	local toggled = false
+	local amt = 0
+	
+	button.MouseButton1Down:Connect(function()
+		if amt == 0 then
+			local message = Instance.new("Message")
+			message.Parent = script.Parent.Parent.Parent
+			message.Text = 'c00lgui has loaded.'
+			wait(1)
+			message:Destroy()
+			amt = 1
+		end
+		if frame then
+			toggled = not toggled
+			if toggled then
+				button.Text = "Open"
+			else
+				button.Text = "Close"
+			end
+			frame.Visible = toggled
+		end
+	end)
+end
+coroutine.wrap(QDMPYG_fake_script)()
