@@ -1,4 +1,3 @@
-local button = script.Parent
 local player = game:GetService("Players").LocalPlayer
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local meleeEvent = ReplicatedStorage:WaitForChild("meleeEvent")
@@ -117,15 +116,11 @@ local function startAutoAttack(character)
 		end
 	end)
 end
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
 
--- 🌪 Activate Phantom on first click
-button.MouseButton1Click:Once(function()
-	local character = player.Character or player.CharacterAdded:Wait()
-	local humanoid = character:WaitForChild("Humanoid")
-
-	phantomify(character)
-	setFace(character, CALM_FACE_ID)
-	setAnimations(character, false)
-	monitorHealth(humanoid, character)
-	startAutoAttack(character)
-end)
+phantomify(character)
+setFace(character, CALM_FACE_ID)
+setAnimations(character, false)
+monitorHealth(humanoid, character)
+startAutoAttack(character)
