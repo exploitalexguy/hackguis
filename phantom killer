@@ -1,0 +1,131 @@
+local button = script.Parent
+local player = game:GetService("Players").LocalPlayer
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local meleeEvent = ReplicatedStorage:WaitForChild("meleeEvent")
+local RunService = game:GetService("RunService")
+
+local CALM_FACE_ID = "17253190934"
+local RAGE_FACE_ID = "10139368249"
+local WALK_ANIM_ID = "140555300083827"
+local RUN_ANIM_ID = "130561334185063"
+
+local isRaging = false
+local canAttack = true
+local aura
+
+-- 📦 Phantomify visuals
+local function phantomify(character)
+	local phantomColor = Color3.fromRGB(90, 90, 120)
+	for _, part in ipairs(character:GetDescendants()) do
+		if part:IsA("BasePart") then
+			part.Material = Enum.Material.ForceField
+			part.Color = phantomColor
+			part.Transparency = 0.5
+		elseif part:IsA("Decal") or part:IsA("Texture") then
+			if part.Name ~= "face" then
+				part.Transparency = 1
+			else
+				part.Transparency = 0
+			end
+		end
+	end
+end
+
+-- 🎭 Set the face
+local function setFace(character, id)
+	local head = character:FindFirstChild("Head")
+	if not head then return end
+	local face = head:FindFirstChild("face") or Instance.new("Decal")
+	face.Name = "face"
+	face.Face = Enum.NormalId.Front
+	face.Parent = head
+	face.Texture = "http://www.roblox.com/asset/?id=" .. id
+	face.Transparency = 0
+end
+
+-- 🕺 Handle animations
+local function setAnimations(character, isRage)
+	local animate = character:FindFirstChild("Animate")
+	if not animate then return end
+	local walkAnim = animate:FindFirstChild("walk") and animate.walk:FindFirstChild("WalkAnim")
+	local runAnim = animate:FindFirstChild("run") and animate.run:FindFirstChild("RunAnim")
+	if walkAnim then walkAnim.AnimationId = "rbxassetid://" .. WALK_ANIM_ID end
+	if runAnim then
+		runAnim.AnimationId = isRage and ("rbxassetid://" .. RUN_ANIM_ID) or ("rbxassetid://" .. WALK_ANIM_ID)
+		animate.Disabled = true
+		task.wait()
+		animate.Disabled = false
+	end
+end
+
+-- 🔥 Rage mode logic
+local function enterRage(humanoid, character)
+	if isRaging then return end
+	isRaging = true
+	humanoid.WalkSpeed = 26
+	setFace(character, RAGE_FACE_ID)
+	setAnimations(character, true)
+
+	aura = Instance.new("PointLight")
+	aura.Name = "RageAura"
+	aura.Color = Color3.new(1, 0, 0)
+	aura.Range = 10
+	aura.Brightness = 8
+	aura.Parent = character:FindFirstChild("HumanoidRootPart")
+end
+
+local function exitRage(humanoid, character)
+	if not isRaging then return end
+	isRaging = false
+	humanoid.WalkSpeed = 16
+	setFace(character, CALM_FACE_ID)
+	setAnimations(character, false)
+	if aura then aura:Destroy() end
+end
+
+-- ❤️ Health monitor
+local function monitorHealth(humanoid, character)
+	humanoid.HealthChanged:Connect(function(hp)
+		if hp <= 40 then
+			enterRage(humanoid, character)
+		else
+			exitRage(humanoid, character)
+		end
+	end)
+end
+
+-- 📏 Constant distance check
+local function startAutoAttack(character)
+	local root = character:WaitForChild("HumanoidRootPart")
+	local humanoid = character:WaitForChild("Humanoid")
+	local Players = game:GetService("Players")
+
+	RunService.RenderStepped:Connect(function()
+		if not canAttack then return end
+		for _, other in ipairs(Players:GetPlayers()) do
+			if other ~= player and other.Character and other.Character:FindFirstChild("HumanoidRootPart") then
+				local distance = (root.Position - other.Character.HumanoidRootPart.Position).Magnitude
+				if distance <= 3 then
+					canAttack = false
+					meleeEvent:FireServer(other)
+					task.delay(1.5, function()
+						canAttack = true
+					end)
+					break
+				end
+			end
+		end
+	end)
+end
+
+-- 🌪 Activate Phantom on first click
+button.MouseButton1Click:Once(function()
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+
+	phantomify(character)
+	setFace(character, CALM_FACE_ID)
+	setAnimations(character, false)
+	monitorHealth(humanoid, character)
+	startAutoAttack(character)
+end)
