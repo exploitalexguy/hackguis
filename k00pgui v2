@@ -1,0 +1,345 @@
+local Players = game:GetService("Players")
+local Lighting = game:GetService("Lighting")
+local player = game.Players.LocalPlayer
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "k00pk00pv2"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
+
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(0, 270, 0, 340)
+Frame.Position = UDim2.new(0, 20, 0, 20)
+Frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Frame.BorderSizePixel = 2
+Frame.BorderColor3 = Color3.fromRGB(0, 80, 0)
+Frame.Active = true
+Frame.Draggable = true
+Frame.Parent = ScreenGui
+
+local title = Instance.new("TextLabel")
+title.Text = "k00pgui\nremake by TCO"
+title.Size = UDim2.new(1, 0, 0, 40)
+title.Position = UDim2.new(0, 0, 0, 0)
+title.TextColor3 = Color3.new(1, 1, 1)
+title.BackgroundTransparency = 1
+title.Font = Enum.Font.SourceSansBold
+title.TextSize = 16
+title.TextXAlignment = Enum.TextXAlignment.Center
+title.Parent = Frame
+
+local r6Button = Instance.new("TextButton")
+r6Button.Text = "R6"
+r6Button.Size = UDim2.new(0, 30, 0, 30)
+r6Button.Position = UDim2.new(0, 50, 0, 5)
+r6Button.AnchorPoint = Vector2.new(1, 0)
+r6Button.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+r6Button.TextColor3 = Color3.new(1, 1, 1)
+r6Button.Font = Enum.Font.SourceSansBold
+r6Button.TextSize = 14
+r6Button.Parent = Frame
+
+r6Button.MouseButton1Click:Connect(function()
+	game:GetService("StarterPlayer").CharacterRigType = Enum.HumanoidRigType.R6
+end)
+
+local ScrollingFrame = Instance.new("ScrollingFrame")
+ScrollingFrame.Size = UDim2.new(1, -10, 1, -50)
+ScrollingFrame.Position = UDim2.new(0, 5, 0, 45)
+ScrollingFrame.BackgroundTransparency = 1
+ScrollingFrame.ScrollBarThickness = 6
+ScrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
+ScrollingFrame.VerticalScrollBarInset = Enum.ScrollBarInset.Always
+ScrollingFrame.Parent = Frame
+
+local UIGridLayout = Instance.new("UIGridLayout")
+UIGridLayout.CellSize = UDim2.new(0, 80, 0, 25)
+UIGridLayout.CellPadding = UDim2.new(0, 5, 0, 5)
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.Parent = ScrollingFrame
+
+local buttonNames = {
+	"Decal", "Skybox", "hint", "particles", "666", "Jumpscare",
+	"UnAnchor", "Explode all", "Destroy", "Raining Fire", "Shutdown",
+	"kill all", "disco", "Message", "Music", "antileave + realm",
+	"Be k00pkiddALT"
+}
+
+local function spamDecals()
+	for _, part in pairs(workspace:GetDescendants()) do
+		if part:IsA("BasePart") then
+			local decal = Instance.new("Decal")
+			decal.Texture = "rbxassetid://9422866248"
+			decal.Face = Enum.NormalId.Front
+			decal.Parent = part
+		end
+	end
+end
+
+local function setSkybox()
+	local sky = Instance.new("Sky")
+	sky.SkyboxBk = "rbxassetid://9422866248"
+	sky.SkyboxDn = "rbxassetid://9422866248"
+	sky.SkyboxFt = "rbxassetid://9422866248"
+	sky.SkyboxLf = "rbxassetid://9422866248"
+	sky.SkyboxRt = "rbxassetid://9422866248"
+	sky.SkyboxUp = "rbxassetid://9422866248"
+	Lighting:ClearAllChildren()
+	sky.Parent = Lighting
+end
+
+local function showHint()
+	local hint = Instance.new("Hint")
+	hint.Text = "TEAM K00PKIDD HAS HACKED THIS GAME | DISC INVITE: .gg/vykYEeGDBF"
+	hint.Parent = workspace
+end
+
+local function spawnParticles()
+	for _, part in pairs(workspace:GetDescendants()) do
+		if part:IsA("BasePart") and not part:FindFirstChild("KoopParticles") then
+			local emitter = Instance.new("ParticleEmitter")
+			emitter.Name = "KoopParticles"
+			emitter.Texture = "rbxassetid://9422866248"
+			emitter.Rate = 15
+			emitter.Lifetime = NumberRange.new(2, 4)
+			emitter.Speed = NumberRange.new(1, 2)
+			emitter.Size = NumberSequence.new(1)
+			emitter.LightEmission = 0.7
+			emitter.SpreadAngle = Vector2.new(360, 360)
+			emitter.Parent = part
+		end
+	end
+end
+
+local function playJumpscare()
+	for _,v in ipairs(game.Players:GetPlayers()) do
+		local realmscare = Instance.new("ScreenGui")
+		realmscare.Name = "realm-scare"
+		realmscare.Parent = v:WaitForChild("PlayerGui")
+		realmscare.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+		realmscare.ResetOnSpawn = false
+
+		local ImageLabel = Instance.new("ImageLabel")
+		ImageLabel.Parent = realmscare
+		ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ImageLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		ImageLabel.Position = UDim2.new(0, 0, -0.0335968398, 0)
+		ImageLabel.Size = UDim2.new(1, 0, 1.03359687, 0)
+		ImageLabel.Image = "http://www.roblox.com/asset/?id=9018233362"
+
+		local sound = Instance.new("Sound")
+		sound.SoundId = "rbxassetid://6129291390"
+		sound.Volume = 10
+		sound.Looped = false
+		sound.Parent = workspace
+		sound:Play()
+
+		sound.Ended:Connect(function()
+			realmscare:Destroy()
+			sound:Destroy()
+		end)
+	end
+end
+
+local function unanchorAll()
+	for _, part in pairs(workspace:GetDescendants()) do
+		if part:IsA("BasePart") then
+			part.Anchored = false
+		end
+	end
+end
+
+local function rainingFire()
+	for i = 1, 50 do
+		local fireball = Instance.new("Part")
+		fireball.Size = Vector3.new(2, 2, 2)
+		fireball.Position = Vector3.new(math.random(-100, 100), 150, math.random(-100, 100))
+		fireball.Anchored = false
+		fireball.BrickColor = BrickColor.new("Bright orange")
+		fireball.Material = Enum.Material.Neon
+		fireball.CanCollide = true
+		fireball.Parent = workspace
+
+		local fire = Instance.new("Fire")
+		fire.Heat = 25
+		fire.Size = 6
+		fire.Parent = fireball
+
+		local bv = Instance.new("BodyVelocity")
+		bv.Velocity = Vector3.new(0, -50, 0)
+		bv.MaxForce = Vector3.new(1e5, 1e5, 1e5)
+		bv.Parent = fireball
+
+		game:GetService("Debris"):AddItem(fireball, 10)
+	end
+end
+
+local function playMusic()
+	local music = workspace:FindFirstChild("KoopMusic")
+	if not music then
+		music = Instance.new("Sound")
+		music.Name = "KoopMusic"
+		music.SoundId = "rbxassetid://1839246711"
+		music.Volume = 10
+		music.Looped = true
+		music.Parent = workspace
+		music:Play()
+	else
+		music:Stop()
+		music:Destroy()
+	end
+end
+
+local function destroyAll()
+	for _, obj in pairs(workspace:GetChildren()) do
+		if obj ~= player.Character then
+			obj:Destroy()
+		end
+	end
+end
+
+local function discoMode()
+	spawn(function()
+		while wait(0.2) do
+			Lighting.Ambient = Color3.new(math.random(), math.random(), math.random())
+			Lighting.OutdoorAmbient = Color3.new(math.random(), math.random(), math.random())
+		end
+	end)
+end
+
+local antileaveEnabled = false
+
+for _, name in ipairs(buttonNames) do
+	local button = Instance.new("TextButton")
+	button.Text = name
+	button.Size = UDim2.new(0, 70, 0, 25)
+	button.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+	button.TextColor3 = Color3.new(1, 1, 1)
+	button.Font = Enum.Font.SourceSans
+	button.TextSize = 14
+	button.BorderSizePixel = 1
+	button.BorderColor3 = Color3.fromRGB(0, 80, 0)
+	button.Parent = ScrollingFrame
+
+	if name == "Decal" then
+		button.MouseButton1Click:Connect(spamDecals)
+	elseif name == "Skybox" then
+		button.MouseButton1Click:Connect(setSkybox)
+	elseif name == "hint" then
+		button.MouseButton1Click:Connect(showHint)
+	elseif name == "particles" then
+		button.MouseButton1Click:Connect(spawnParticles)
+	elseif name == "666" then
+		button.MouseButton1Click:Connect(function()
+			for _, part in pairs(workspace:GetDescendants()) do
+				if part:IsA("BasePart") and not part:FindFirstChildOfClass("Fire") then
+					local fire = Instance.new("Fire")
+					fire.Heat = 10
+					fire.Size = 5
+					fire.Parent = part
+				end
+			end
+		end)
+	elseif name == "Jumpscare" then
+		button.MouseButton1Click:Connect(playJumpscare)
+	elseif name == "UnAnchor" then
+		button.MouseButton1Click:Connect(unanchorAll)
+	elseif name == "Explode all" then
+		button.MouseButton1Click:Connect(function()
+			for _, part in pairs(workspace:GetDescendants()) do
+				if part:IsA("BasePart") then
+					local explosion = Instance.new("Explosion")
+					explosion.Position = part.Position
+					explosion.BlastRadius = 6
+					explosion.BlastPressure = 50000
+					explosion.Parent = workspace
+				end
+			end
+		end)
+	elseif name == "Destroy" then
+		button.MouseButton1Click:Connect(destroyAll)
+	elseif name == "Raining Fire" then
+		button.MouseButton1Click:Connect(rainingFire)
+	elseif name == "Shutdown" then
+		button.MouseButton1Click:Connect(function()
+			for _, plr in pairs(Players:GetPlayers()) do
+				if plr ~= player then
+					plr:Kick("Teh Game Iz Fuked Up!!!111")
+				end
+			end
+		end)
+	elseif name == "kill all" then
+		button.MouseButton1Click:Connect(function()
+			for _, plr in pairs(Players:GetPlayers()) do
+				if plr.Character and plr.Character:FindFirstChild("Humanoid") then
+					plr.Character.Humanoid.Health = 0
+				end
+			end
+		end)
+	elseif name == "disco" then
+		button.MouseButton1Click:Connect(discoMode)
+	elseif name == "Message" then
+		button.MouseButton1Click:Connect(function()
+			local msg = Instance.new("Message")
+			msg.Text = "EL K00PARZ HAS HAXORED TIS GAM | .gg/KanEKxAJgG"
+			msg.Parent = workspace
+			delay(5, function()
+				msg:Destroy()
+			end)
+		end)
+	elseif name == "Music" then
+		button.MouseButton1Click:Connect(playMusic)
+	elseif name == "antileave + realm" then
+		button.MouseButton1Click:Connect(function()
+			if not antileaveEnabled then
+				antileaveEnabled = true
+				game:BindToClose(function()
+					playJumpscare()
+					wait(3)
+				end)
+				button.Text = "antileave activado"
+				button.BackgroundColor3 = Color3.fromRGB(0, 100, 0)
+			end
+		end)
+	elseif name == "Be k00pkiddALT" then
+		button.MouseButton1Click:Connect(function()
+			local success, err = pcall(function()
+				local userId = 2395559439
+				player:LoadCharacter()
+				player.DisplayName = "k00pkiddALT"
+				Players:GetUserThumbnailAsync(userId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size48x48)
+				local humanoid = player.Character and player.Character:FindFirstChildOfClass("Humanoid")
+				if humanoid then
+					local HumanoidDescription = Players:GetHumanoidDescriptionFromUserId(userId)
+					humanoid:ApplyDescription(HumanoidDescription)
+				end
+			end)
+			if not success then
+				warn("Error at appling k00pkiddALT: "..tostring(err))
+			end
+		end)
+	end
+end
+
+-- AquÃ­ aÃ±ado el nuevo botÃ³n "Enstrio decal"
+local enstrioButton = Instance.new("TextButton")
+enstrioButton.Text = "Enstrio decal"
+enstrioButton.Size = UDim2.new(0, 70, 0, 25)
+enstrioButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+enstrioButton.TextColor3 = Color3.new(1, 1, 1)
+enstrioButton.Font = Enum.Font.SourceSans
+enstrioButton.TextSize = 14
+enstrioButton.BorderSizePixel = 1
+enstrioButton.BorderColor3 = Color3.fromRGB(0, 80, 0)
+enstrioButton.Parent = ScrollingFrame
+
+enstrioButton.MouseButton1Click:Connect(function()
+	for _, part in pairs(workspace:GetDescendants()) do
+		if part:IsA("BasePart") then
+			local decal = Instance.new("Decal")
+			decal.Texture = "rbxassetid://127826371022322"
+			decal.Face = Enum.NormalId.Front
+			decal.Parent = part
+		end
+	end
+end)
